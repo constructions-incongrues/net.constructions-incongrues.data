@@ -1,15 +1,31 @@
 <?php
 
+$slug = str_replace('.', '_', $domain);
+
 return [
-    'database' => [
-        'charset' => 'utf8mb4',
-        'engine' => 'InnoDB',
-        'host' => '127.0.0.1',
-        'name' => 'daheardit-record',
-        'password' => 'daheardit-reco',
-        'port' => 3306,
-        'type' => 'mysql',
-        'username' => 'daheardit-record',
+
+    'auth' => [
+        'secret_key' => null,
+        'public_key' => null,
+        'ttl' => 20,
+        'social_providers' => [
+            // 'okta' => '',
+            // 'github' => '',
+            // 'facebook' => '',
+            // 'google' => '',
+            // 'twitter' => '',
+        ],
+    ],
+
+    'cache' => [
+        'enabled' => false,
+        'response_ttl' => 3600,
+        'pool' => [
+            // 'adapter' => '',
+            // 'path' => '',
+            // 'host' => '',
+            // 'port' => '',
+        ],
     ],
 
     'cookie' => [
@@ -34,6 +50,41 @@ return [
         'exposed_headers' => array (),
         'max_age' => 600,
         'credentials' => true,
+    ],
+
+    'database' => [
+        'charset' => 'utf8mb4',
+        'engine' => 'InnoDB',
+        'host' => '127.0.0.1',
+        'name' => $slug,
+        'password' => 'daheardit-reco',
+        'port' => 3306,
+        'type' => 'mysql',
+        'username' => $slug,
+    ],
+
+    'env' => 'production',
+
+    'hooks' => [
+        'actions' => [],
+        'filters' => [],
+    ],
+
+    'logger' => [
+        'path' => sprintf('%s/../logs', __DIR__),
+    ],
+
+    'mail' => [
+        'default' => [
+            'transport' => 'sendmail',
+            // 'sendmail' => '',
+            // 'host' => '',
+            // 'port' => '',
+            // 'username' => '',
+            // 'password' => '',
+            // 'encryption' => '',
+            'from' => sprintf('directus@%s', $domain),
+        ],
     ],
 
     'rate_limit' => [
@@ -62,53 +113,5 @@ return [
         // 'proxy_downloads' => '',
     ],
 
-    'mail' => [
-        'default' => [
-            'transport' => 'sendmail',
-            // 'sendmail' => '',
-            // 'host' => '',
-            // 'port' => '',
-            // 'username' => '',
-            // 'password' => '',
-            // 'encryption' => '',
-            'from' => sprintf('directus@%s', $domain)
-        ],
-    ],
-
-    'cache' => [
-        'enabled' => false,
-        'response_ttl' => 3600,
-        'pool' => [
-            // 'adapter' => '',
-            // 'path' => '',
-            // 'host' => '',
-            // 'port' => '',
-        ],
-    ],
-
-    'auth' => [
-        'secret_key' => 'mP4AF8kSZoCCpgbv0kkYzEUoLikl7JAd',
-        'public_key' => '71cabd99-a03e-48b0-93dd-be81e695d1e6',
-        'ttl' => 20,
-        'social_providers' => [
-            // 'okta' => '',
-            // 'github' => '',
-            // 'facebook' => '',
-            // 'google' => '',
-            // 'twitter' => '',
-        ],
-    ],
-
-    'hooks' => [
-        'actions' => [],
-        'filters' => [],
-    ],
-
     'tableBlacklist' => [],
-
-    'env' => 'production',
-
-    'logger' => [
-        'path' => sprintf('%s/../logs', __DIR__),
-    ],
 ];
