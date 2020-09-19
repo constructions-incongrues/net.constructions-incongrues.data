@@ -1,5 +1,5 @@
 <?php
-// musiqueapproximative.net
+// musiques-incongrues.net
 
 // Extrapolation du nom de domaine
 $domain = basename(__FILE__, '.php');
