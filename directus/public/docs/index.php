@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="charset" content="utf8">
+        <title>I V R E S S E</title>
         <style>
             body {
                 padding: 1em;
@@ -58,8 +59,7 @@
 
             <h1 class="first ui dividing header">IVRESSE</h1>
             <blockquote>
-            <?php $number = rand(0, 9) ?>
-                <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">Toucher du doigt la substantifique moëlle</span> <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">manifester un désintérêt total pour les flacons</span> <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">transpercer des rêves à grands coups d'étoiles</span>
+                <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">Toucher du doigt la substantifique moëlle</span> <span style="color:#<?php $number = rand(0, 9);  echo sprintf('%d%d%d', $number, $number, $number) ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">manifester un désintérêt total pour les flacons</span> <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">transpercer des rêves à grands coups d'étoiles</span>
             </blockquote>
         </div>
 
@@ -73,16 +73,16 @@
           <h3 class="first ui header dividing"><a name="<?php echo $site ?>" href="#<?php echo $site ?>"> </a> <?php echo $site ?></h3>
           <dl class="ui text">
                 <dt><h4>Administration</h4></dt>
-                <dd><strong>Connexion</strong> : <a href="https://ivresse.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?>">https://ivresse.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?></a></dd>
+                <dd><strong>Connexion</strong> : <a href="https://data.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?>">https://data.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?></a></dd>
 
                 <dt><h4>API REST</h4></dt>
-                <dd><strong>Point d'accès</strong> : <a href="https://ivresse.constructions-incongrues.net/<?php echo $site ?>/">https://ivresse.constructions-incongrues.net/<?php echo $site ?>/</a></dd>
+                <dd><strong>Point d'accès</strong> : <a href="https://data.constructions-incongrues.net/<?php echo $site ?>/">https://data.constructions-incongrues.net/<?php echo $site ?>/</a></dd>
                 <dd><strong>Documentation</strong> : <a href="https://docs.directus.io/api/reference.html">https://docs.directus.io/api/reference.html</a></dd>
 
                 <dt><h4>API GraphQL</h4></dt>
                 <dd><strong>Documentation</strong> : <a href="https://docs.directus.io/api/graphql.html">https://docs.directus.io/api/graphql.html</a></dd>
-                <dd><strong>Point d'accès</strong> : <a href="https://ivresse.constructions-incongrues.net/<?php echo $site ?>/gql">https://ivresse.constructions-incongrues.net/<?php echo $site ?>/gql</a></dd>
-                <dd><strong>Explorateur</strong> : <a href="https://ivresse.constructions-incongrues.net/docs/graphiql.php?endpoint=https://ivresse.constructions-incongrues.net/<?php echo $site ?>/gql&token=">https://ivresse.constructions-incongrues.net/docs/graphiql.php</a></dd>
+                <dd><strong>Point d'accès</strong> : <a href="https://data.constructions-incongrues.net/<?php echo $site ?>/gql">https://data.constructions-incongrues.net/<?php echo $site ?>/gql</a></dd>
+                <dd><strong>Explorateur</strong> : <a href="https://data.constructions-incongrues.net/docs/graphiql.php?endpoint=https://data.constructions-incongrues.net/<?php echo $site ?>/gql&token=">https://data.constructions-incongrues.net/docs/graphiql.php</a></dd>
           </dl>
         </div>
 
