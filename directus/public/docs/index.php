@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="charset" content="utf8">
         <title>I V R E S S E</title>
+        <link rel="icon" type="image/png" href="docs/glou.png" />
         <style>
             body {
                 padding: 1em;
