@@ -34,19 +34,14 @@
 
 
             h3.ui.header {
-                text-transform: uppercase;
-                font-size: 2em;
+                font-size: 1.5em;
                 letter-spacing: 0.1em;
             }
-            h1.ui.glou span::before, h3.ui a::before {
+            h1.ui.glou span::before {
                 content: url('docs/glou.png');
             }
             h1.ui.glou {
                 margin-bottom: 0;
-            }
-
-            h3.ui a:hover, h3.ui a:active {
-                filter: invert(1);
             }
 
         </style>
@@ -70,7 +65,7 @@
 
 <?php foreach (['daheardit-records', 'ouiedire', 'mazemod', 'musiqueapproximative', 'musiques-incongrues', 'rebeccarium'] as $site): ?>
         <div class="ui text container">
-          <h3 class="first ui header dividing"><a name="<?php echo $site ?>" href="#<?php echo $site ?>"> </a> <?php echo $site ?></h3>
+          <h3 class="first ui header dividing"><a name="<?php echo $site ?>" href="#<?php echo $site ?>"><?php echo $site ?></a></h3>
           <dl class="ui text">
                 <dt><h4>Administration</h4></dt>
                 <dd><strong>Connexion</strong> : <a href="https://data.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?>">https://data.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?></a></dd>
