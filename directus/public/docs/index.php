@@ -58,8 +58,8 @@
 
             <h1 class="first ui dividing header">IVRESSE</h1>
             <blockquote>
-            <?php echo $number = rand(0, 9) ?>
-                <span style="color:#<?php echo $number ?><?php echo $number ?>;">Toucher du doigt la substantifique moëlle</span> <span style="color:#<?php echo $number ?><?php echo $number ?><?php echo $number ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php echo $number ?><?php echo $number ?><?php echo $number ?>;">manifester un désintérêt total pour les flacons</span> <span style="color:#<?php echo $number ?><?php echo $number ?><?php echo $number ?>;">transpercer des rêves à grands coups d'étoiles</span>
+            <?php $number = rand(0, 9) ?>
+                <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">Toucher du doigt la substantifique moëlle</span> <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">manifester un désintérêt total pour les flacons</span> <span style="color:#<?php echo sprintf('%d%d%d', $number, $number, $number) ?>;">transpercer des rêves à grands coups d'étoiles</span>
             </blockquote>
         </div>
 
