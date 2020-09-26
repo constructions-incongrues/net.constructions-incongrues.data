@@ -38,7 +38,7 @@
                 letter-spacing: 0.1em;
             }
             h1.ui.glou span::before, h3.ui a::before {
-                content: url('glou.png');
+                content: url('docs/glou.png');
             }
             h1.ui.glou {
                 margin-bottom: 0;
