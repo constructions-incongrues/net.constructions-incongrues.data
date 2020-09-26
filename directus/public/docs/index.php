@@ -6,38 +6,70 @@
         <meta name="charset" content="utf8">
         <style>
             body {
-                padding: 3em;
+                padding: 1em;
             }
             h1.ui.header {
                 font-size: 5em;
                 text-transform: uppercase;
                 text-align: center;
                 letter-spacing: .8em;
+                padding-top: 0;
+                margin-top: 0;
             }
             dt {
                 margin: 1em;
             }
-
+            blockquote {
+                color: darkgray;
+                font-style: italic;
+                font-size: larger;
+            }
             .ui.header {
-                text-align: center;
                 width: 100%;
             }
+            .ui.header.top {
+                text-align: center;
+            }
+
+
+            h3.ui.header {
+                text-transform: uppercase;
+                font-size: 2em;
+                letter-spacing: 0.1em;
+            }
+            h1.ui.glou span::before, h3.ui a::before {
+                content: url('glou.png');
+            }
+            h1.ui.glou {
+                margin-bottom: 0;
+            }
+
+            h3.ui a:hover, h3.ui a:active {
+                filter: invert(1);
+            }
+
         </style>
     </head>
     <body>
-        <div class="ui text container header">
+        <div class="ui text container header top">
+            <h1 class="first ui glou">
+                <span> </span>
+            </h1>
+
             <h1 class="first ui dividing header">IVRESSE</h1>
-            <q>
-                Substantifique moëlle, triomphe du Signal sur le Bruit, désintérêt profond pour les Flacons.
-            </q>
+            <blockquote>
+                <span style="color:#<?php echo random(0, 9) ?><?php echo random(0, 9) ?><?php echo random(0, 9) ?>;">Toucher du doigt la substantifique moëlle</span> <span style="color:#<?php echo random(0, 9) ?><?php echo random(0, 9) ?><?php echo random(0, 9) ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php echo random(0, 9) ?><?php echo random(0, 9) ?><?php echo random(0, 9) ?>;">manifester un désintérêt total pour les flacons</span> <span style="color:#<?php echo random(0, 9) ?><?php echo random(0, 9) ?><?php echo random(0, 9) ?>;">transpercer des rêves à grands coups d'étoiles</span>
+            </blockquote>
         </div>
 
         <br>
         <br>
+        <br>
+        <br>
 
-<?php foreach (['daheardit-records', 'mazemod', 'musiqueapproximative', 'musiques-incongrues'] as $site): ?>
+<?php foreach (['daheardit-records', 'ouiedire', 'mazemod', 'musiqueapproximative', 'musiques-incongrues', 'rebeccarium'] as $site): ?>
         <div class="ui text container">
-          <h3 class="first" name="<?php echo $site ?>"><?php echo $site ?></h3>
+          <h3 class="first ui header dividing"><a name="<?php echo $site ?>" href="#<?php echo $site ?>"> </a> <?php echo $site ?></h3>
           <dl class="ui text">
                 <dt><h4>Administration</h4></dt>
                 <dd><strong>Connexion</strong> : <a href="https://ivresse.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?>">https://ivresse.constructions-incongrues.net/admin/#/login?project=<?php echo $site ?></a></dd>
@@ -53,10 +85,11 @@
           </dl>
         </div>
 
-        <br>
-        <br>
+        <div class="ui text container">
+            <br>
+            <br>
+        </div>
 <?php endforeach ?>
-        
+
     </body>
 </html>
-
