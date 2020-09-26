@@ -57,7 +57,7 @@ return [
         'engine' => 'InnoDB',
         'host' => '127.0.0.1',
         'name' => $slug,
-        'password' => 'daheardit-reco',
+        'password' => null,
         'port' => 3306,
         'type' => 'mysql',
         'username' => $slug,

@@ -5,7 +5,7 @@
 $domain = basename(__FILE__, '.php');
 
 // Récupération de la configuration par défaut
-$defaults = require(__DIR__.'/___defaults.php');
+$defaults = require(__DIR__.'/__defaults.php');
 
 // Configuration du projet
 return array_replace_recursive(

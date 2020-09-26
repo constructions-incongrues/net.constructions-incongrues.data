@@ -1,5 +1,5 @@
 <?php
-// musiqueapproximative.net
+// mazemod.org
 
 // Extrapolation du nom de domaine
 $domain = basename(__FILE__, '.php');
@@ -12,8 +12,8 @@ return array_replace_recursive(
     $defaults,
     [
         'auth' => [
-            'public_key' => '71cabd99-a03e-48b0-93dd-be81e695d1e6',
-            'secret_key' => 'mP4AF8kSZoCCpgbv0kkYzEUoLikl7JAd',
+            'public_key' => '71cabd99-efef-48b0-0E39-be81e695d1e6',
+            'secret_key' => 'mP4AF8kSZoC76gbv0grYzEUoLikl7JAd',
         ],
 
         'cache' => [
@@ -22,9 +22,9 @@ return array_replace_recursive(
         ],
 
         'database' => [
-            'name' => 'musiqueapproxima',
-            'username' => 'musiqueapproxima',
-            'password' => 'musiqueapproxi',
+            'name' => 'mazemod_org',
+            'username' => 'mazemod_org',
+            'password' => 'mazemod.org_66',
         ],
     ]
 );
