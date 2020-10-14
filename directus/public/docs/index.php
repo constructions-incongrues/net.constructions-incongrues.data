@@ -32,8 +32,6 @@
             .ui.header.top {
                 text-align: center;
             }
-
-
             h3.ui.header {
                 font-size: 1.5em;
                 letter-spacing: 0.1em;
@@ -55,7 +53,7 @@
 
             <h1 class="first ui dividing header">IVRESSE</h1>
             <blockquote>
-                <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">Toucher du doigt la substantifique moëlle</span> <span style="color:#<?php $number = rand(0, 9);  echo sprintf('%d%d%d', $number, $number, $number) ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">manifester un désintérêt total pour les flacons</span> <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">transpercer des rêves à grands coups d'étoiles</span>
+                <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">Planter son doigt dans la substantifique moëlle</span> <span style="color:#<?php $number = rand(0, 9);  echo sprintf('%d%d%d', $number, $number, $number) ?>;">assister au triomphe du signal sur le bruit</span> <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">manifester un désintérêt profond pour les flacons</span> <span style="color:#<?php $number = rand(0, 9); echo sprintf('%d%d%d', $number, $number, $number) ?>;">transpercer des rêves à grands coups d'étoiles</span>
             </blockquote>
         </div>
 
@@ -64,7 +62,7 @@
         <br>
         <br>
 
-<?php foreach (['daheardit-records', 'ouiedire', 'mazemod', 'musiqueapproximative', 'musiques-incongrues', 'rebeccarium'] as $site): ?>
+<?php foreach (['daheardit-records', 'empilements', 'ouiedire', 'mazemod', 'musiqueapproximative', 'musiques-incongrues', 'rebeccarium'] as $site): ?>
         <div class="ui text container">
           <h3 class="first ui header dividing"><a name="<?php echo $site ?>" href="#<?php echo $site ?>"><?php echo $site ?></a></h3>
           <dl class="ui text">
