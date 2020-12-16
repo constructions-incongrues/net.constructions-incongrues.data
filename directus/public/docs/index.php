@@ -62,7 +62,7 @@
         <br>
         <br>
 
-<?php foreach (['daheardit-records', 'empilements', 'ouiedire', 'mazemod', 'musiqueapproximative', 'musiques-incongrues', 'rebeccarium'] as $site): ?>
+<?php foreach (['daheardit-records', 'empilements', 'ouiedire', 'mazemod', 'musiqueapproximative', 'musiques-incongrues', 'radio-laliniere'] as $site): ?>
         <div class="ui text container">
           <h3 class="first ui header dividing"><a name="<?php echo $site ?>" href="#<?php echo $site ?>"><?php echo $site ?></a></h3>
           <dl class="ui text">
